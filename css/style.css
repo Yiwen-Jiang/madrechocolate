@@ -121,8 +121,16 @@ p{
 
 .bars .ilist{ text-align:center;}
 .bars .ilist ul{ display:inline-block; overflow:hidden; margin:100px 0px;}
-.bars .ilist ul li{ float:left; margin:0px 20px;}
-.bars .ilist ul li img{ width:280px;}
+.bars .ilist li{ float:left; margin:0px 20px;}
+.bars .ilist img{ width:280px;}
+.bars .ilist .text-wrapper{
+    display: none;
+    position: absolute;
+ }
+ 
+.bars .ilist a:hover .text-wrapper{
+    display: block;
+}
 
 .bars1 .ilist ul {
     display: inline-block;
