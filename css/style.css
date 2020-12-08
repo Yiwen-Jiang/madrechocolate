@@ -115,8 +115,8 @@ p{
 .bars1 .w1200{  background:url(../images/bg2.png) no-repeat top center; background-size:100% auto; height:768px;}
 .bars4 .w1200{  background:url(../images/bg4.png) no-repeat top center; background-size:100% auto; height:768px;}
 .bars h1{ margin-top:50px;
-           color: #fde8b7;
-    font-size: 62px;} 
+        color: #fde8b7;
+        font-size: 62px;} 
 
 
 .bars .ilist{ text-align:center;}
@@ -143,10 +143,13 @@ p{
 }
 
 
-.events .w1200{  background:url(../images/bg4.png) no-repeat top center; background-size:100% auto;}
+.events .w1200{  background:url(../images/bg4.png) no-repeat top center; 
+    background-size:100% auto;}
+
 .events h1{ margin-top:50px;
-           color: #2086b1;
-    font-size: 50px;}
+            color: #2086b1;
+            font-size: 50px;}
+
 .events .dd{ width:80%; margin:0 auto; margin-top:110px;}
 .events .dd p{ margin-bottom:20px;}
 .events .dd .dl{ float:left; width:45%; text-align:center;}
