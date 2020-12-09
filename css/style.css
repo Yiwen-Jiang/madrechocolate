@@ -3,7 +3,7 @@ body
 {  
 }
 .w1200{ 
-    width:1200px; margin:0 auto; overflow:hidden;
+    max-width:1200px; margin:0 auto; overflow:hidden;
 }
 
 a{ 
@@ -111,25 +111,49 @@ p{
 .items .ilist ul li img{ width:280px;}
 
 
-.bars .w1200{  background:url(../images/bg1.png) no-repeat top center; background-size:100% auto; height:768px;}
-.bars1 .w1200{  background:url(../images/bg2.png) no-repeat top center; background-size:100% auto; height:768px;}
+/* .bars .w1200{  background:url(../images/bg1.png) no-repeat top center; background-size:100% auto; height:768px;} */
+
+.bars1 { 
+    background-image: url(../images/bg1-top.png), url(../images/bg1-bottom.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    /* background-size: contain; */
+    background-size: 75%;
+    min-height: 70vh;
+}
+
+
+
 .bars4 .w1200{  background:url(../images/bg4.png) no-repeat top center; background-size:100% auto; height:768px;}
 .bars h1{ margin-top:50px;
-        color: #fde8b7;
-        font-size: 62px;} 
+        color: white;
+        font-size: 3em;} 
 
 
 .bars .ilist{ text-align:center;}
 .bars .ilist ul{ display:inline-block; overflow:hidden; margin:100px 0px;}
-.bars .ilist li{ float:left; margin:0px 20px;}
+.bars .ilist li{ 
+    float:left; 
+    margin:0px 20px;
+    position: relative;
+}
 .bars .ilist img{ width:280px;}
 .bars .ilist .text-wrapper{
     display: none;
     position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
  }
  
 .bars .ilist a:hover .text-wrapper{
     display: block;
+}
+
+.bars .ilist a:hover .text-wrapper.hover-right{
+    left: 50px;
+    bottom: 50px;
+    width: 100%;
 }
 
 .bars1 .ilist ul {
@@ -165,3 +189,4 @@ form .fr { float:left;width:200px; margin-left:100px; padding-top:300px;}
 form .fl img{ width:400px; }
 form .fr label{ display:block;}
 form .fr input{ font-size:18px; padding:3px 0px; border-radius:10px; border:1px solid #999999;}
+
