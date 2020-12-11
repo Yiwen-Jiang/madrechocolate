@@ -2,8 +2,11 @@
 body 
 {  
 }
-.w1200{ 
-    max-width:1200px; margin:0 auto; overflow:hidden;
+
+.container{ 
+    max-width:1200px; 
+    margin:0 auto; 
+    overflow:hidden;
 }
 
 a{ 
@@ -114,10 +117,24 @@ p{
   } 
   
 
-
+.banner{
+    padding: 3em 0;
+    background-color: teal;
+    min-height: 60vh;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .banner img{ width:100%; display:block;}
-.banner .w1200{ position:relative;}
-.banner .title{ position:absolute; top:100px; left:40px;}
+.banner .container{ 
+    position:relative;
+    padding: 0 1.5em 0 1.5em;
+}
+/* .banner .title{ position:absolute; top:100px; left:40px;} */
+.banner .title{
+    display: inline-block;
+}
 .banner .title h3{ color:#a9f5f3; font-size:31px;  }
 .banner .title h2{ color:#fde8b7; font-size:62px; border-bottom:5px solid #fff; margin-bottom:3px;  }
 .banner .title p{ font-size:12px; color:#fff; }
@@ -154,7 +171,7 @@ p{
 .flink img{ width:60px; margin-right:30px; margin-top:20px;}
 
 
-.about .w1200{  background:url(../images/bg5.png) no-repeat top center; background-size:100% auto;}
+.about .container{  background:url(../images/bg5.png) no-repeat top center; background-size:100% auto;}
 .about h1{ margin-top:50px;
            color: #fde8b7;
     font-size: 62px;}
@@ -162,7 +179,7 @@ p{
 .about .dd p{ margin-bottom:20px;}
 
 
-.items .w1200{  background:url(../images/bg3.png) no-repeat top center; background-size:100% auto; height:768px;}
+.items .container{  background:url(../images/bg3.png) no-repeat top center; background-size:100% auto; height:768px;}
 .items h1{ margin-top:50px;
            color: #fde8b7;
     font-size: 62px;} 
@@ -173,7 +190,7 @@ p{
 .items .ilist ul li img{ width:280px;}
 
 
-/* .bars .w1200{  background:url(../images/bg1.png) no-repeat top center; background-size:100% auto; height:768px;} */
+/* .bars .container{  background:url(../images/bg1.png) no-repeat top center; background-size:100% auto; height:768px;} */
 
 .bars1 { 
     background-image: url(../images/bg1-top.png), url(../images/bg1-bottom.png);
@@ -186,7 +203,7 @@ p{
 
 
 
-.bars4 .w1200{  background:url(../images/bg4.png) no-repeat top center; background-size:100% auto; height:768px;}
+.bars4 .container{  background:url(../images/bg4.png) no-repeat top center; background-size:100% auto; height:768px;}
 .bars h1{ margin-top:50px;
         color: white;
         font-size: 3em;} 
@@ -200,23 +217,29 @@ p{
     position: relative;
 }
 .bars .ilist img{ width:280px;}
-.bars .ilist .text-wrapper{
+
+/* hover-block */
+a.hover-block .text-wrapper{
     display: none;
     position: absolute;
     bottom: 0;
     background-color: black;
     color: white;
  }
- 
-.bars .ilist a:hover .text-wrapper{
+a.hover-block:hover .text-wrapper{
     display: block;
 }
-
-.bars .ilist a:hover .text-wrapper.hover-right{
+a.hover-block:hover .text-wrapper.hover-right{
     left: 50px;
     bottom: 50px;
     width: 100%;
 }
+a.hover-block:hover .text-wrapper.hover-left{
+    left: -50px;
+    bottom: 50px;
+    width: 100%;
+}
+
 
 .bars1 .ilist ul {
     display: inline-block;
@@ -229,7 +252,7 @@ p{
 }
 
 
-.events .w1200{  background:url(../images/bg4.png) no-repeat top center; 
+.events .container{  background:url(../images/bg4.png) no-repeat top center; 
     background-size:100% auto;}
 
 .events h1{ margin-top:50px;
