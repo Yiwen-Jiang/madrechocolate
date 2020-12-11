@@ -15,10 +15,10 @@ ul,li{
 }
 
 p{ 
-    font-family: "kepler-std-extended-caption",serif; 
+    font-family: minerva-modern, sans-serif;
 }
 
-.menu{ 
+/* .menu{ 
     background:#07cfcc;
 }
 .menu .linkl{ 
@@ -44,13 +44,75 @@ p{
 }
 .menu .linkr ul li{ 
     width:50%; text-align:center; float:left;
-}
-.menu li p{ 
+} */
+
+/* .menu li p{ 
     font-size:24px; color:#fff;
 }
 .menu li.act p{ 
     color:#000;
-}
+} */
+
+/* SITE HEADER */
+.site-header {
+    background-color: #07cfcc;
+    padding: 1.5em;
+  }
+
+  .site-id h1 img{
+      width: 150px;
+  }
+
+  .site-header a {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  
+  /* SITE ID */
+  .site-id {
+    position: absolute;
+    top: .8em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+  /* SITE NAV */
+  .site-nav ul,
+  .site-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+  }
+
+  .site-nav p{
+    font-family: bodoni-urw, serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .site-nav img{
+    width:80px;
+  }
+
+  .site-nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .site-nav li {
+    /* REQUIRES A SET MIN-WIDTH, ADJUST IF NEEDED */
+    min-width: 5em;
+  }
+  
+  .site-nav li:nth-child(3) { 
+    /* DOUBLE THE MIN-WIDTH */
+    margin-left: 10em;
+  } 
+  
 
 
 .banner img{ width:100%; display:block;}
